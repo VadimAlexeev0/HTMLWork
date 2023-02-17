@@ -11,7 +11,8 @@ body{
 
     margin-left: 4vw;
     margin-right: 4vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 
     border-style: solid;
     border-radius: 15px;
@@ -30,8 +31,8 @@ body{
     min-height: 65vh;
 }
 .sideInfo {
-   margin-top: 2.5vh;
-   padding-right: 10px;
+   margin-top: 10px;
+   margin-right: 10px;
    margin-left: 10px;
    flex-grow: 1; 
    display: flex;
@@ -43,7 +44,7 @@ body{
 
 h1{
     font-size: 2.5em;
-    
+    margin-bottom: -15px;
 }
 
 img {
@@ -57,7 +58,7 @@ header {
 }
 .navigation>li {
     display: inline;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 header>p{
@@ -111,4 +112,22 @@ tr:nth-child(odd) {
   
 tr:nth-child(even) {
     background-color: #293941;
+}
+
+@media only screen and (max-width: 1000px) {
+    .informationPane {
+      order: 1;
+    }
+    header{
+        order: 2;
+    }
+    .sideInfo{
+        order: 3;
+    }
+    .break{
+        order: 4;
+    }
+    footer{
+        order: 5;
+    }
 }
